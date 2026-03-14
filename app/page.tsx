@@ -3,12 +3,16 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Destination from "./components/Destination";
 import Section from "./components/Section";
+import SectionTwo from "./components/SectionTwo";
+
+
 export default function Home() {
   return(
     <main>
       <Hero />
       <Destination />
       <Section />
+      <SectionTwo />
     </main>
   )
 }

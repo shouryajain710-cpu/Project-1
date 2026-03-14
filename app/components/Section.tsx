@@ -1,3 +1,5 @@
+import Button from "./Joinbtn"
+
 export default function Section(){
     return(
       <div className="Section">
@@ -27,6 +29,13 @@ export default function Section(){
               <b>Lush Landscape & Water Features</b>
             </div>
           </div>
+        </div>
+        <div className="Section-Bottom">
+          <Button />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis assumenda doloribus molestias quo ut. <br />
+            Quisquam, numquam commodi a illo optio sed! Quod, nisi.
+          </p>
         </div>
       </div>
     )

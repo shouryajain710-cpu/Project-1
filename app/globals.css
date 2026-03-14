@@ -136,7 +136,10 @@ body {
   flex: 1;
   gap: 12px;
   font-size: larger;
-
+}
+.DestL h1{
+  font-size: 30px;
+  font-weight: 700;
 }
 .DestL-card{
   height: 280px;
@@ -183,6 +186,12 @@ body {
 .Section-top{
   text-align: center;
   font-size: larger;
+  background-color: rgb(240, 236, 229);
+  border-radius: 16px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 16px;
+  padding: 20px;
 }
 .Section-top h1{
   font-size: larger;
@@ -234,9 +243,11 @@ body {
 }
 .Section-gridR-T1{
   background-image: url("/Sectionbg1.png");
+  border-radius: 16px;
 }
 .Section-gridR-T2{
   background-image: url("/Sectionbg1.png");
+  border-radius: 16px;
 }
 
 .Section-gridR-B {
@@ -251,4 +262,104 @@ body {
 
   
   background-image: url("/Sectionbg1.png");
+}
+
+.Section-Bottom{
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 16px;
+  padding: 20px;
+
+  gap: 20px;
+  background-color: rgb(240, 236, 229);
+}
+
+.Section2{
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+.Section2-cardL{
+  flex: 2;
+  height: 175px;
+  width: 100%;
+
+  padding: 20px;
+  border-radius: 16px;
+  background-image: url("/Sectionbg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover ;
+
+  display: flex;
+  flex-direction: column;
+
+  color: beige;
+}
+.Section2-cardL p{
+  max-height: 100px;
+  overflow: hidden;
+}
+.Section2-cardL a{
+  font-size: small;
+  margin-top: auto;
+}
+.Section2-cardR1{
+  flex: 1;
+  height: 175px;
+  width: 100%;
+
+  border-radius: 16px;
+  padding: 40px;
+  color: beige;
+
+  background-image: url("/Sectionbg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover ;
+
+}
+.Section2-cardR1 h2{
+  font-size: 30px;
+}
+.Section2-cardR2{
+  flex: 1;
+  height: 175px;
+  width: 100%;
+
+  border-radius: 16px;
+  padding: 40px;
+  color: darkblue;
+
+  background-image: url("/Sectionbg3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover ;  
+}
+.Section2-cardR2 h2{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+footer{ 
+  background-color: rgb(0, 0, 0);
+  color: beige;
+
+  padding: 20px;
+  border-radius: 16px 16px 0 0;
+}
+.foot-socials{
+  display: inline;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.abt{
+  min-height: 520px;
+}
+
+.contacts{
+  min-height: 520px;
 }
