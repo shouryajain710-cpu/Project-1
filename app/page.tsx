@@ -9,7 +9,7 @@ import SectionTwo from "./components/SectionTwo";
 export default function Home() {
   return(
     <main>
-      <Hero />
+      {/* <Hero /> */}
       <Destination />
       <Section />
       <SectionTwo />

@@ -274,11 +274,44 @@ body {
   gap: 20px;
   background-color: rgb(240, 236, 229);
 }
+@media (max-width: 768px) {
+  .Section-Bottom {
+    flex-direction: column;  /* stack button and text vertically */
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .Section-Bottom button {
+    width: 100%;             /* full width button on mobile */
+  }
+}
 
 .Section2{
   display: flex;
   padding: 40px;
   gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .Section2 {
+    flex-direction: column;  /* stack cards vertically */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .Section2-cardL,
+  .Section2-cardR1,
+  .Section2-cardR2 {
+    height: auto;        /* let height grow naturally */
+    min-height: 150px;   /* minimum height */
+    width: 100%;
+    flex: none;          /* remove flex sizing */
+  }
+
+  .Section2-cardR1,
+  .Section2-cardR2 {
+    padding: 20px;       /* reduce padding on mobile */
+  }
 }
 .Section2-cardL{
   flex: 2;
@@ -350,16 +383,15 @@ footer{
   border-radius: 16px 16px 0 0;
 }
 .foot-socials{
-  display: inline;
-  flex-direction: column;
-  justify-content: flex-end;
+  display: flex;
   align-items: end;
+  justify-content: end;
 }
 
 .abt{
-  min-height: 520px;
+  min-height: 200px;
 }
 
 .contacts{
-  min-height: 520px;
+  min-height: 200px;
 }

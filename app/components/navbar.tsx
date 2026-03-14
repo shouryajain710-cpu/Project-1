@@ -10,7 +10,7 @@ export default function Navbar(){
             <div className="NavBar">
                 <div className="navL">
                     <img src="/herobg.png" alt="Logo" />
-                    <b>Name</b>
+                    <a href="/">Name</a>
                 </div>
                 <div className="navC">
                     <Dropdown
