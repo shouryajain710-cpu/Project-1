@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Hero{
+  background-image: url('/herobg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 400px;
+  min-width: 300px;
+
+  margin: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 12px;
+}
+.Hero-in{
+  display: flex;
+  margin-top: 150px;
+  color: beige;
+}
+.HeroL{
+  flex: 1;
+}
+.HeroL h1{
+  font-size: 35px;
+  font: bolder;
+}
+.HeroR{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.HeroR img{
+  width: 200px;
+}
+.HeroBtn{
+  color: beige;
+  display: flex;
+  gap: 20px;
+  font-size: small;
+}
+.HeroBtn button{
+  padding: 4px;
+  border: solid 1px beige;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px ;
+}
+.HeroBtn button:hover{
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+.NavBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 2px rgb(152, 143, 236);
+  border-radius: 19px;
+  min-width: 300px;
+  color: beige;
+  overflow: hidden;  
+  padding: 8px;
+}
+.navL{
+  display: flex;
+  flex: 1.75;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+}
+.navL img{
+  height: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.navC{
+  display: flex;
+  flex: 1.5;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 20px;
+}
+.navR{
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  gap: 12px;
+
+}
+.JoinBtn{
+  border: solid 2px white;
+  border-radius: 12px;
+  padding: 0.6em 0.8em;
+  box-shadow: 2px 2px 3px #000000b4;
+  transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+.JoinBtn:hover{
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(120, 8, 208, 0.7);
+}
+.Dest{
+  display: flex;
+  margin-top: 30px;
+  padding: 40px;
+  gap: 20px;
+}
+.DestL{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+  font-size: larger;
+
+}
+.DestL-card{
+  height: 280px;
+  width: 420px;
+  background-image: url("/herobg.png");
+
+  border-radius: 12px;
+  font-size: larger;
+  color: beige;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px;
+
+  width: 100%;
+  height: 250px;
+}
+.DestR{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+}
+.DestR p{
+  max-height: 70px;
+  overflow: hidden;
+}
+.DestR-card{
+  height: 180px;
+  width: 100%;
+  background-image: url("/BlueCat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #f0f0f0;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+
+  border-radius: 12px;
+}
+.Section-top{
+  text-align: center;
+  font-size: larger;
+}
+.Section-top h1{
+  font-size: larger;
+  font-weight: bolder;
+}
+.Section-tag{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.Section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 40px;
+}
+
+.Section-gridL {
+  height: 500px;   /* spans full height */
+  border-radius: 16px;
+  background-image: url("/Sectionbg1.png");
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+
+  padding: 20px;
+  color: beige;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.Section-gridR {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+}
+.Section-gridR-T{
+  flex: 1;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border-radius: 16px;
+}
+.Section-gridR-T1{
+  background-image: url("/Sectionbg1.png");
+}
+.Section-gridR-T2{
+  background-image: url("/Sectionbg1.png");
+}
+
+.Section-gridR-B {
+  flex: 1;         /* each takes half the height */
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  color: beige;
+
+  
+  background-image: url("/Sectionbg1.png");
+}
