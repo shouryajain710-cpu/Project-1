@@ -34,7 +34,7 @@ body {
   min-width: 300px;
 
   margin: 20px;
-  padding: 20px;
+  padding: 2rem;
   padding-top: 10px;
   border-radius: 12px;
 }
@@ -82,8 +82,7 @@ body {
   border: solid 2px rgb(152, 143, 236);
   border-radius: 19px;
   min-width: 300px;
-  color: beige;
-  overflow: hidden;  
+  color: beige; 
   padding: 8px;
 }
 .navL{
@@ -113,6 +112,71 @@ body {
   gap: 12px;
 
 }
+.hamburger{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+  color:beige;
+}
+.mobileMenu{
+  display:flex;
+  flex:1.5;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+}
+
+@media (max-width:768px){
+
+.NavBar{
+  position:relative;
+}
+
+/* show hamburger */
+.hamburger{
+  display:block;
+}
+
+/* hide desktop layout */
+.NavBar > .navC,
+.NavBar > .navR{
+  display:none;
+}
+
+/* mobile dropdown */
+.mobileMenu{
+  display:none;
+
+  position:absolute;
+  top:70px;
+  left:0;
+  width:100%;
+
+  flex-direction:column;
+  align-items:center;
+
+  background:#0c1e3c;
+  border-radius:15px;
+
+  padding:20px 0;
+  gap:20px;
+}
+/* show when active */
+.mobileMenu.active{
+  display:flex;
+}
+
+/* show items inside menu */
+.mobileMenu .navC,
+.mobileMenu .navR{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:15px;
+}
+
+}
+
 .JoinBtn{
   border: solid 2px white;
   border-radius: 12px;

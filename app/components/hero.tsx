@@ -8,12 +8,11 @@ export default function Hero(){
             <div className="Hero-in">
                 
                 <div className="HeroL">
-                <h1>
-                    Unwind , Play and 
-                    <br />
+                <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+                    Unwind, Play and <br />
                     Perfect Your Swing
                 </h1>
-                <p>
+                <p className="mt-4">
                     A championship experience awaits you on lush,
                     world-class fairways designed for golfers of
                     every level.
